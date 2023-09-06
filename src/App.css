@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes rotate {
+
+  0% {
+      transform: rotateY(0deg); 
+      transform-origin: center center;
+  }
+  100% {
+      transform: rotateY(360deg); 
+      transform-origin: center center; 
+  }
+}
+
+.rotate-icon {
+  animation: rotate 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
